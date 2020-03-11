@@ -2,7 +2,7 @@
 Snakemake pipeline for obtaining enrichment quality measures using phantompeakqualtools and peak calling using MACS2. 
 
 # Before running
-In the config.yaml file you should include details of samples to be analyzed and paths. You can also specify custom options for MACS2.
+In the `config.yaml` file you should include details of samples to be analyzed and paths. You can also specify custom options for MACS2.
 Sorted BAM files should be placed in same folder before running snakemake.
 
 ### Dependiencies
