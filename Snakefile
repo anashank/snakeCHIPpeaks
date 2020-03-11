@@ -20,7 +20,7 @@ rule filter_multimapped_qc:
     	qualtools = "log/{sample}.qual"
 
     shell:
-	    "samtools view -h {input} | grep -v -e 'XA:Z:' -e 'SA:Z:' | samtools view -b > {output.o1} && Rscript ./phantompeakqualtools/run_spp.R -c={output.o1} -savp -p=8 -odir=phantompeakqual_{params.p1} -out={output.o2} -tmpdir=phantompeakqual_{params.p1} 2> {log.qualtools}"
+	    "samtools view -h {input} | grep -v -e 'XA:Z:' -e 'SA:Z:' | samtools view -b > {output.o1} && Rscript {config[ppqualpath]} -c={output.o1} -savp -p=8 -odir=phantompeakqual_{params.p1} -out={output.o2} -tmpdir=phantompeakqual_{params.p1} 2> {log.qualtools}"
 
 #Call peaks using MACS2
 rule macs2:

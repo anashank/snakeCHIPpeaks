@@ -1,8 +1,8 @@
 #Fill sample details here
 samples:
     test1: test1.sorted.bam
-    test2: test2.sorted.bam
 
+ppqualpath: ./phantompeakqualtools/run_spp.R
 #Parameters for peak calling using macs2
 
 broad_peak: ""
@@ -12,3 +12,4 @@ treatment: -t
 control: -c
 
 macs_optional: ""
+
