@@ -11,3 +11,11 @@ Sorted BAM files should be placed in same folder before running snakemake.
 * [samtools](http://www.htslib.org/)
 * [phantompeakqualtools](https://github.com/kundajelab/phantompeakqualtools)
 * [macs2](https://github.com/taoliu/MACS) for calling peaks
+
+# How to run?
+```bash
+Dry run: snakemake -n
+Actual run: snakemake --cores [number of cores]
+
+Run snakemake --unlock if directory is locked
+```
