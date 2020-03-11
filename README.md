@@ -1,5 +1,8 @@
 # snakeCHIPpeaks
 Snakemake pipeline for obtaining quality measures using phantompeakqualtools and peak calling using MACS2. 
+
+# Before running
+In the config.yaml file you should include details of samples to be analyzed. You can also specify custom options for MACS2.
 Sorted BAM files should be placed in same folder before running snakemake.
 
 ### Dependiencies
